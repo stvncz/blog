@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Viens courir avec moi</title>
+    <!--
+    Comments in English per user preference: short, clear notes for developers.
+    This file is a minimal, accessible skeleton for a short story page
+    that includes images and videos. Replace placeholders with your assets.
+  -->
+    <style>
+      :root {
+        --bg: #f8f7f5;
+        --card: #ffffff;
+        --accent: #2b6cb0;
+        --muted: #666;
+        --bg-img: url("/public/bg.jpg");
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto,
+          "Helvetica Neue", Arial;
+      }
+      body {
+        background: var(--bg) no-repeat center center fixed;
+        background-image: var(--bg-img);
+        background-size: cover;
+        color: #111;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 1rem;
+      }
+      header {
+        margin-bottom: 1.5rem;
+      }
+      h1 {
+        font-size: clamp(1.4rem, 2.8vw, 2rem);
+        margin: 0;
+      }
+      .meta {
+        color: var(--muted);
+        font-size: 0.9rem;
+        margin-top: 0.4rem;
+      }
+      article {
+        background: var(--card);
+        padding: 1.2rem;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      }
+      .chapter {
+        margin: 1rem 0;
+        padding: 0.6rem 0;
+      }
+      figure {
+        margin: 0 0 1rem 0;
+      }
+      figure img,
+      figure video {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        display: block;
+      }
+      figcaption {
+        font-size: 0.9rem;
+        color: var(--muted);
+        margin-top: 0.4rem;
+      }
+      .controls {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-top: 0.6rem;
+      }
+      .btn {
+        background: var(--accent);
+        color: #fff;
+        border: none;
+        padding: 0.45rem 0.7rem;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      footer {
+        margin-top: 1.2rem;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Un footing dans la lumière que tu aimes</h1>
+        <p class="meta">
+          Par Amorecito — <time datetime="2025-11-06">6 novembre 2025</time>
+        </p>
+      </header>
+
+      <article aria-labelledby="story-title">
+        <blockquote
+          class="citation"
+          style="
+            font-style: italic;
+            margin: 1rem 0;
+            color: #555;
+            border-left: 4px solid #ccc;
+            padding-left: 0.8rem;
+          "
+        >
+          Une façon de t’emmener avec moi fouler les sentiers côtiers, sentir le
+          froid piquer et admirer la lumière découper des paysages sauvages.
+        </blockquote>
+        <h2 id="story-title" class="sr-only"></h2>
+
+        <!-- Chapter 1: text + image -->
+        <section class="chapter" aria-label="Chapitre 1">
+          <p>
+            Ça y est, plus d’excuses.<br />
+            Le soleil partage le ciel avec de gros cumulus cotonneux.<br />
+            J’enfile mes chaussures et je file, encore indécis, direction la
+            côte.<br />
+            Mon choix s’arrête sur Dalbosc, le Minou c’est vraiment dur, et le
+            Dellec, je connais trop.<br />
+            J’ai envie d’aller plus loin que la dernière fois, après les ruines
+            des douaniers.<br />
+            Je me présente donc, dans la descente de Dalbosc et comme souvent,
+            j’aperçois des vagues.<br />
+            La mer est haute, surfer n’est pas une option. Mais rien que le
+            spectacle des vagues qui défilent est fascinant.
+          </p>
+
+          <figure>
+            <!-- Use muted autoplay only when appropriate. Provide controls for accessibility. -->
+            <video controls playsinline preload="metadata" width="640">
+              <source src="/public/1.mp4" type="video/mp4" />
+            </video>
+            <figcaption>T'as vu c'est gros hihi</figcaption>
+          </figure>
+
+          <p>
+            Assez flâné, j'ai lacé mes chaussures et compter deux par deux, il
+            est grand temps de s'y mettre.<br />
+            Je sais pas si tu vois, mais ça commence tout de suite par une
+            montée pour se mettre en jambe, spoiler, je ne les ai pas, c'est
+            dur, déjà.<br />
+            Et je cours, je me raccroche à la vie, je me soûle avec le bruit,
+            des vagues qui accourent.<br />
+            Et j'arrête là cette parodie de Balavoine parce que me voilà déjà
+            qui surplombe Dalbosc et qui observe les lignes des vagues qui
+            viennent se perdre dans un lit blanc de mousse.<br />
+            Je me dis alors que les photos ce sera pour le retour, il faut quand
+            même que je puisse dire que j'ai courru !<br />
+            Je repars donc direction Deolen !<br />
+            Je me réjouis déjà de retrouver notre nid d'amour et avec lui de
+            beaux souvenirs.
+          </p>
+
+          <figure>
+            <img src="/public/9.jpg" alt="Oooooh" />
+            <figcaption>
+              Y'aura pas qu'un seul phare dressé aux alentours, c'est moi qui
+              vous le dis.
+            </figcaption>
+          </figure>
+
+          <p>
+            Passé ce nid, qui m'a l'air tout aussi douillet que bientôt 10 mois
+            auparavant, c'est que le temps file.<br />
+            Je me remets à courir, le souffle court, les jambes lourdes, mais le
+            moral au beau fixe.<br />
+            Je dépasse bientôt le repère que je m'étais fixé, un vieux moulin et
+            une ruine de douaniers.<br />
+            Et comme promis, je continue, je file je ne sais où, je crois bien
+            que je n'ai jamais exploré ce coin là !<br />
+            Quelques minutes plus tard pourtant, voilà un paysage que je
+            reconnais. Tiens tiens...<br />
+          </p>
+
+          <figure>
+            <img src="/public/7.jpg" alt="tiens tiens" />
+            <figcaption>Est-ce que tu reconnais ?</figcaption>
+          </figure>
+
+          <p>
+            Indice : on se rapproche de Locmaria.<br />
+            Et je vois des maisons au loin qui pourraient être le quartier aisé,
+            s'il en est, au dessus de Tregana...<br />
+            <details>
+              <summary>
+                Afficher la réponse en me cliquant dessus, je n'attends que ça
+              </summary>
+              <p>
+                C'est la Palme ! Un spot de saut au dessus de Tregana, d'où on
+                accède par les quartiers. T'es déjà allée là-bas ?
+              </p>
+            </details>
+            Bref, voilà ma carte mentale complétée et donc c'est l'occasion de
+            faire demi-tour.<br />
+            Ça fait déjà bientôt 30 minutes ! Bon à un rythme de papy certes
+            mais quand même !<br />
+            Je sais que le retour va être ponctué de plusieurs arrêts photo
+            parce que c'est à CE moment là que me vient l'idée de ce petit
+            article de blog pour toi hihi<br />
+          </p>
+
+          <figure>
+            <img src="/public/3.jpg" alt="locmaria" />
+            <figcaption>
+              Voilààà la vue, et la lumière ! A ma droite quand je prends la
+              photo c'est Tregana et à gauche, retour à Deolen.
+            </figcaption>
+          </figure>
+
+          <p>
+            Je repars donc, et on joue à se dépasser avec un monsieur au manteau
+            bleu qui court aussi, et qui s'arrête aussi aha<br />
+            Je repasse donc par les paysages que je viens de croiser, mais la
+            lumière les a déjà transformés.<br />
+            Et, mais, qu'est-ce que ? Un tété ?
+          </p>
+
+          <figure>
+            <img src="/public/6.jpg" alt="tété" />
+            <figcaption>
+              Un gros champi qui fait très tété si on me demande mon avis.
+            </figcaption>
+          </figure>
+
+          <p>
+            J'arrive au niveau du vieux câble de transmission que je t'avais
+            montré, et je découvre qu'on y a ajouté une boîte à musique !<br />
+            Monte le son !<br />
+          </p>
+
+          <figure>
+            <!-- Use muted autoplay only when appropriate. Provide controls for accessibility. -->
+            <video controls playsinline preload="metadata" width="640">
+              <source src="/public/2.mp4" type="video/mp4" />
+            </video>
+            <figcaption>J'ai pas reconnu perso..</figcaption>
+          </figure>
+
+          <figure>
+            <img src="/public/8.jpg" alt="paysage" />
+            <figcaption>C'est joli et plein de viiiie</figcaption>
+          </figure>
+
+          <figure>
+            <img src="/public/10.jpg" alt="tété" />
+            <figcaption>Jolie lumière hihi</figcaption>
+          </figure>
+
+          <p>
+            Voilàààà, je suis de retour à Dalbosc, et ce petit tour m'aura pris
+            45 minutes.<br />
+            J'espère que ça t'a plu de suivre mes aventures hihi<br />
+          </p>
+
+          <figure>
+            <img src="/public/14.jpg" alt="tété" />
+            <figcaption>Bisouuuuuus</figcaption>
+          </figure>
+        </section>
+        <p>
+          Bonus : Un arc-en-ciel sur le retour, parce que oui, il a plu à
+          Plouzané mais pas sur le sentier hihi
+        </p>
+        <footer>
+          <figure>
+            <img src="/public/15.jpg" alt="tété" />
+          </figure>
+        </footer>
+      </article>
+    </div>
+  </body>
+</html>
